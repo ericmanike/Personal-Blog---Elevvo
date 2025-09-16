@@ -35,5 +35,8 @@ export default Home;
 
  export const Loader = async()=> {
  const data = await fetch('http://localhost:5000/posts')
+ if(!data.ok){
+  throw Error('Could not find posts')
+ }
   return data.json()
 }

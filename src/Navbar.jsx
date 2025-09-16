@@ -1,18 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaSearch, FaWindowClose} from 'react-icons/fa'
-import { useRef } from 'react'
+import { Search } from './searchContext.jsx'
+import { useContext } from 'react'
 
 function Navbar() {
-
-const inputRef = useRef();
+const [find, setFind] = useContext(Search)
 
 const [search, setSearch] = useState(false)
-
-if(search && inputRef.current){
-  inputRef.current.focus();
-}
 
  const [Textboxe, setTextboxe] = useState('')
 
@@ -48,11 +44,11 @@ if(search && inputRef.current){
     </li>
   </div>
 
-  <input  ref={inputRef}
+  <input  
     type="text"
     placeholder="Search..."
-    value={Textboxe}
-    onChange={(e) => setTextboxe(e.target.value)}
+    value={find}
+    onChange={(e) => setFind(e.target.value)}
     className={`bg-amber-50 h-[50%] text-[18px] w-[500px] lg:ml-[550px] 
                  border-indigo-950 p-3 max-md:ml-auto
                  absolute top-[150px]  md:top-7  max-md:w-[70vw]
@@ -60,13 +56,13 @@ if(search && inputRef.current){
                 text-black text-2xl rounded-2xl outline-none
                  focus:ring-blue-500 border-2 border-blue-500
                 focus:border-blue-500 `}
-    style={{ boxShadow: "0px 0px  10px brown" }}
+    style={{ boxShadow: "0px 0px  10px black" }}
   />
 
   <div
     className="flex flex-row justify-around gap-5 text-white text-2xl cursor-pointer p-5 max-md:absolute max-md:top-14  max-md:right-3"
     onClick={() => 
-      setSearch(!search )
+      setSearch(!search) 
     }
   >
     {!search ? (

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link,useLoaderData} from 'react-router-dom';
 import { useSearchParams } from 'react-router-dom';
+import { FaEye } from 'react-icons/fa';
 function Blog() {
   const [searchParams,setSearchParams] = useSearchParams()
   const [filteredData, setFiltered] = React.useState([])
@@ -34,7 +35,7 @@ function Blog() {
  
    function handleCategory(cat){
 
-      return cat == category ? 'bg-blue-600 text-white':
+      return cat == category ? 'bg-gray-600 text-white':
       'bg-amber-600 text-white'
    }
 
@@ -55,11 +56,15 @@ function Blog() {
 
       <div  className='h-[100%]  w-full text-[18px]  rounded-2xl flex flex-wrap  text-center justify-center items-center  '>
       { filteredData.map((post)=>( <div key={post.id} className='w-[45%] m-2 h-[50%] border-2 border-black rounded-2xl p-3 hover:scale-102 transition-all duration-500 cursor-pointer overflow-ellipsis pb-5'>
+
     <Link to={post.id}  key={post.id}> 
+      <FaEye className='absolute right-10 top-5 m-auto text-[20px] text-black rounded-2xl '/>
+      
    <em className='text-amber-950 text-2xl'> Title:</em> {post.title}
      <img src={post.image} className='w-full h-[80%] object-cover rounded-2xl  text-[16px]' />
       <em className='truncate block overflow-ellipsis w-full h-[30px] text-[20px]'>{post.message}</em>
-    </Link>
+  </Link>
+ 
    
   </div>)) }
 

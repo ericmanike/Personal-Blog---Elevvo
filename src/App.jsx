@@ -9,6 +9,8 @@ import Details, { DetailsLoader } from './details.jsx'
 import Blog from './Blog.jsx'
 import BlogLayout from './blogLayout.jsx'
 import Notfound from './Notfound.jsx'
+import Error from './error.jsx'
+import SearchContext from './searchContext.jsx'
 
 
 function App() {
@@ -16,12 +18,12 @@ function App() {
  
 
          const router = createBrowserRouter(createRoutesFromElements(
-          <Route path='/' element={<Layout />} >
+          <Route path='/' element={<Layout />} errorElement={<Error/>}>
             <Route index element={<Home/>}  loader={Loader}/>
 
             <Route path='blog' element={<BlogLayout />} > 
-              <Route index element={<Blog />}  loader ={Loader} />
-               <Route path=':id' element={<Details />}  loader={DetailsLoader}/>
+              <Route index element={<Blog />}  loader ={Loader}  errorElement={<Error />}/>
+               <Route path=':id' element={<Details />}  loader={DetailsLoader} errorElement={<Error />}/>
             </Route>
 
             <Route path='contact' element={<ContactLayout/>} >
@@ -42,12 +44,10 @@ function App() {
   return (
     <>
    
-   
-    <RouterProvider router={router} >
+   <SearchContext>
+    <RouterProvider router={router} />
 
-       
-      </RouterProvider>
-    
+  </ SearchContext >
    
 </>
   )
