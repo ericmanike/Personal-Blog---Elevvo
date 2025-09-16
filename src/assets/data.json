@@ -1,0 +1,82 @@
+{ "posts":[
+    {"title":"Mastercard Foundation summer camp",
+     "message":"An intensive summer camp organized by the Mastercard Foundation aimed at empowering students with coding, problem-solving, and leadership skills. Participants had hands-on workshops in programming and team projects.",
+      "reference":"Mastercard Foundation Programs",
+      "image":"/summerCamp.jpeg",
+      "category":"Programming and Tech",
+      "id":1
+
+    },
+
+    {"title":"Mastercard Foundation summer camp",
+     "message":"An intensive summer camp organized by the Mastercard Foundation aimed at empowering students with coding, problem-solving, and leadership skills. Participants had hands-on workshops in programming and team projects.",
+      "reference":"Mastercard Foundation Programs",
+      "image":"/summerCamp.jpeg",
+      "category":"Programming and Tech",
+        "id":2
+
+    },
+
+    {"title":"Excellence awards",
+     "message":"The Excellence Awards celebrated outstanding students who excelled in academics, innovation, and community service. Winners were recognized for their dedication and impact on society.",
+      "reference":"KNUST Awards Ceremony",
+        "image":"/award.jpeg", 
+        "category":"Programming and Tech",
+            "id":3
+    },
+    {"title":"Mastercard Foundation sports day",
+     "message":" A fun-filled sports day event organized by the Mastercard Foundation to promote physical fitness and teamwork among students. Activities included soccer, relay",
+      "reference":" Mastercard Foundation Events",
+      "category":"Life Style",
+           "image":"/sport.jpeg",
+            "id":8
+    },
+    {"title":"Mastercard Foundation Dinner",
+     "message":"  A formal dinner event hosted by the Mastercard Foundation to honor students and partners. The evening featured speeches, awards, and networking opportunities.",
+      "reference":" Mastercard Foundation Events",
+           "image":"/mcfDinner.jpeg",
+               "id":4
+    },
+
+    {"title":"Knust end of semester exams",
+     "message":"  The end-of-semester exams at KNUST marked the culmination of academic efforts, testing students' knowledge and understanding of their courses. It was a period of intense study and preparation.",
+     "reference":"  KNUST Academic Calendar",
+          "image":"/exams.jpeg",
+          "category":"Life Style",
+            "id":5
+    },
+    {"title":"Second Graduation",
+     "message":"  A memorable graduation ceremony celebrating the achievements of students who have successfully completed their studies. The event was filled with joy, pride, and a sense of accomplishment.",
+      "reference":" KNUST Graduation Ceremony",
+           "image":"/graduation.jpeg",
+           "category":"Life Style",
+               "id":6
+    },
+    {"title":"Scholars  award",
+     "message":"  An award ceremony recognizing scholars for their exceptional academic performance and contributions to research. The event highlighted the importance of education and scholarly excellence.",
+      "reference":" KNUST Awards Ceremony",
+           "image":"/award.jpeg",
+           "category":"Life Style",
+               "id":7
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+]
+
+
+
+
+
+
+}
