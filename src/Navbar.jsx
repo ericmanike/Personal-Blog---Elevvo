@@ -46,7 +46,7 @@ const [search, setSearch] = useState(false)
 
   <input  
     type="text"
-    placeholder="Search..."
+    placeholder="Search Post..."
     value={find}
     onChange={(e) => setFind(e.target.value)}
     className={`bg-amber-50 h-[50%] text-[18px] w-[500px] lg:ml-[550px] 

@@ -4,3 +4,9 @@
     color: rgb(156, 6, 6);
     font-weight: bold;
 }
+
+.search-results{
+    scrollbar-width: none;
+    overflow-y: scroll;
+    
+}

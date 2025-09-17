@@ -2,65 +2,90 @@
     {"title":"Mastercard Foundation summer camp",
      "message":"An intensive summer camp organized by the Mastercard Foundation aimed at empowering students with coding, problem-solving, and leadership skills. Participants had hands-on workshops in programming and team projects.",
       "reference":"Mastercard Foundation Programs",
-      "image":"/summerCamp.jpeg",
-      "category":"Programming and Tech",
+      "image":"/summercamp.jpg",
+      "category":"Life Style",
       "id":1
 
     },
-
-    {"title":"Mastercard Foundation summer camp",
-     "message":"An intensive summer camp organized by the Mastercard Foundation aimed at empowering students with coding, problem-solving, and leadership skills. Participants had hands-on workshops in programming and team projects.",
-      "reference":"Mastercard Foundation Programs",
-      "image":"/summerCamp.jpeg",
+    {"title":"Hackathon",
+     "message":"A 48-hour hackathon event where students collaborated to develop innovative tech solutions to real-world problems. Teams presented their projects to a panel of judges, with winners receiving prizes and mentorship opportunities.",
+      "reference":"KNUST Tech Events",
+      "image":"/coding.jpg",
       "category":"Programming and Tech",
-        "id":2
+          "id":2
+   
 
     },
 
-    {"title":"Excellence awards",
-     "message":"The Excellence Awards celebrated outstanding students who excelled in academics, innovation, and community service. Winners were recognized for their dedication and impact on society.",
-      "reference":"KNUST Awards Ceremony",
-        "image":"/award.jpeg", 
-        "category":"Programming and Tech",
+    {"title":"Mastercard Foundation orientation",
+     "message":" An orientation program organized by the Mastercard Foundation to welcome new students and provide them with essential information about academic resources, campus life, and support services.",
+      "reference":"Mastercard Foundation Programs",
+      "category":"Life Style",
+           "image":"/orientation.jpg",
             "id":3
     },
     {"title":"Mastercard Foundation sports day",
      "message":" A fun-filled sports day event organized by the Mastercard Foundation to promote physical fitness and teamwork among students. Activities included soccer, relay",
       "reference":" Mastercard Foundation Events",
       "category":"Life Style",
-           "image":"/sport.jpeg",
+           "image":"/sports.jpg",
             "id":8
     },
     {"title":"Mastercard Foundation Dinner",
      "message":"  A formal dinner event hosted by the Mastercard Foundation to honor students and partners. The evening featured speeches, awards, and networking opportunities.",
       "reference":" Mastercard Foundation Events",
-           "image":"/mcfDinner.jpeg",
+           "image":"/dinner.jpg",
+            "category":"Life Style",
                "id":4
     },
 
     {"title":"Knust end of semester exams",
      "message":"  The end-of-semester exams at KNUST marked the culmination of academic efforts, testing students' knowledge and understanding of their courses. It was a period of intense study and preparation.",
      "reference":"  KNUST Academic Calendar",
-          "image":"/exams.jpeg",
+          "image":"/exams.jpg",
           "category":"Life Style",
             "id":5
     },
     {"title":"Second Graduation",
      "message":"  A memorable graduation ceremony celebrating the achievements of students who have successfully completed their studies. The event was filled with joy, pride, and a sense of accomplishment.",
       "reference":" KNUST Graduation Ceremony",
-           "image":"/graduation.jpeg",
+           "image":"/graduation.jpg",
            "category":"Life Style",
                "id":6
     },
     {"title":"Scholars  award",
      "message":"  An award ceremony recognizing scholars for their exceptional academic performance and contributions to research. The event highlighted the importance of education and scholarly excellence.",
       "reference":" KNUST Awards Ceremony",
-           "image":"/award.jpeg",
+           "image":"/award.jpg",
            "category":"Life Style",
                "id":7
 
-    }
+    },
 
+  {
+  "title":"Game Development Workshop",
+  "message":"A hands-on workshop focused on the fundamentals of game development, covering topics such as game design, programming, and graphics.",
+  "reference":"KNUST Tech Events",  
+  "image":"/gaming.jpg",
+  "category":"Programming and Tech",
+  "id":9
+ },
+  {
+  "title":"AI and Machine Learning Seminar",
+  "message":"An informative seminar discussing the latest trends and applications of artificial intelligence and machine learning in various industries.",
+  "reference":"KNUST Tech Events",  
+  "image":"/AI.jpg",
+  "category":"Programming and Tech",
+  "id":10
+ }
+ ,{
+  "title":"Cybersecurity Awareness Campaign",
+  "message":"A campaign aimed at educating students about the importance of cybersecurity, including best practices for online safety and data protection.",
+  "reference":"KNUST Tech Events",  
+  "image":"/web.jpg",
+  "category":"Programming and Tech",
+  "id":11
+ }
 
 
 
