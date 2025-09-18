@@ -64,7 +64,7 @@ function Blog() {
       
       
    <em className='text-amber-950 text-2xl'> Title:</em> {post.title}
-     <img src={post.image} className='w-full h-[70%] object-cover rounded-2xl  text-[16px]' />
+     <img src={post.image} className='w-full h-[90%] object-cover rounded-2xl  text-[16px]' />
       <em className='truncate block overflow-ellipsis w-full h-[30px] text-[20px]'>{post.message}</em>
       <FaEye className='absolute right-10 top-5 m-auto text-[20px] hidden md:block text-black rounded-2xl '/>
   </Link>

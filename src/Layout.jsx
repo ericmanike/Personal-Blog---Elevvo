@@ -10,7 +10,7 @@ function Layout() {
     <div>
       < Navbar />
       <Searchpage />
-      <div  className=' text-center mt-10 font-bold text-2xl'>
+      <div  className=' text-center mt-10 font-bold text-2xl bg-[#0000006d]'>
         <Outlet />
       </div>
     </div>

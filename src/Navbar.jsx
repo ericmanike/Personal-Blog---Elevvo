@@ -13,7 +13,7 @@ const [search, setSearch] = useState(false)
  const [Textboxe, setTextboxe] = useState('')
 
   return (
-    <div className='w-full  h-[200px] text-[10px] md:text-2xl flex items-center justify-center  z-70  relative'>
+    <div className='w-full  h-[110px] text-[10px] md:text-2xl flex items-center justify-center  z-70  relative'>
     <ul className="
     flex space-x-8 bg-[#1f0942] p-5 text-3xl 
      absolute h-[150px] w-full z-50 
@@ -58,6 +58,7 @@ const [search, setSearch] = useState(false)
                 focus:border-blue-500 `}
     style={{ boxShadow: "0px 0px  10px black" }}
   />
+ 
 
   <div
     className="flex flex-row justify-around gap-5 text-white text-2xl cursor-pointer p-5 max-md:absolute max-md:top-14  max-md:right-3"
