@@ -9,8 +9,9 @@ function Searchpage() {
      const [visible, setVisible] = React.useState(false)
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch('http://localhost:5000/posts');
-            const data = await response.json();
+            const response = await fetch('/data.json');
+            let data = await response.json();
+           data = data.posts
           setData(data);
   
         }
