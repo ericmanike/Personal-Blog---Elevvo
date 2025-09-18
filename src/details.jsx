@@ -13,10 +13,10 @@ const details = useLoaderData()
     <div>
       <h1> Read full post</h1>
 
-      <div className=' w-full md:w-[70%]  h-screen m-auto border-2 border-[gray] rounded-2xl p-3 hover:scale-101 transition-all duration-500 cursor-pointer flex flex-col'>
-   <h2 className='text-2xl font-bold'>{details.title} </h2>
+      <div className=' w-[80%] md:w-[70%]  h-screen m-auto border-2 border-[gray] rounded-2xl p-3 hover:scale-101 transition-all duration-500 cursor-pointer flex flex-col'>
+   <h2 className=' text-[15px]  md:text-[20px] font-bold'>{details.title} </h2>
    <img src={details.image}  className='w-full h-[40%] md:h-[50%] object-cover rounded-2xl mt-2' />
-   <p className=' w-full overflow-ellipsis h-fit text-[20px]'>{details.message}</p>
+   <p className=' w-full overflow-ellipsis h-fit text-[15px]  md:text-[20px]'>{details.message}</p>
    <p className=' w-full  text-[18px] italic mt-2 text-amber-800'> Reference: {details.reference}</p>
 </div>
 <button className='bg-orange-500 text-white p-3 rounded-2xl mt-5 hover:scale-105 transition-all duration-300 ease-in-out' onClick={ ()=>navigate('/blog')}>Back to All post</button>
@@ -29,7 +29,14 @@ export default Details;
 
 export const DetailsLoader = async({params})=> {
   const {id} = params;
-  const data = await fetch("http://localhost:5000/posts/"+id)
-   return data.json()
+  const res = await fetch("/data.json")
+const Post =  await res.json()
+const data = Post.posts.find((p)=>String(p.id)===id)
+if(!res.ok){
+  throw new Error("Could not find post")
+}
+return data
+
+   
    
  }

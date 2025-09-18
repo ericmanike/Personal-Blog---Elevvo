@@ -60,7 +60,7 @@ function Blog() {
       <div  className='h-[100%]  w-full text-[16px] md:text-[18px] z-0 rounded-2xl flex flex-wrap  text-center justify-center items-center  '>
       { filteredData.map((post)=>( <div key={post.id} className='w-[45%] m-2 h-[30%] border-2 border-black rounded-2xl p-3 hover:scale-101 transition-all duration-500 cursor-pointer overflow-ellipsis pb-5 relative'>
 
-    <Link to={post.id}  key={post.id}> 
+    <Link to={`/blog/${post.id}`}  key={post.id}> 
       
       
    <em className='text-amber-950 text-2xl'> Title:</em> {post.title}

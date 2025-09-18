@@ -15,7 +15,7 @@ const [search, setSearch] = useState(false)
   return (
     <div className='w-full  h-[110px] text-[10px] md:text-2xl flex items-center justify-center  z-70  relative'>
     <ul className="
-    flex space-x-8 bg-[#1f0942] p-5 text-3xl 
+    flex space-x-8 bg-[#1f0942] p-5 text-[16px]  md:text-3xl 
      absolute h-[150px] w-full z-50 
     justify-between items-center lg:pr-10 lg:pl-16
      top-0 left-0 right-0 mx-auto
@@ -44,7 +44,7 @@ const [search, setSearch] = useState(false)
     </li>
   </div>
 
-  <input  
+  <input  name='search'
     type="text"
     placeholder="Search Post..."
     value={find}
@@ -53,7 +53,7 @@ const [search, setSearch] = useState(false)
                  border-indigo-950 p-3 max-md:ml-auto
                  absolute top-[150px]  md:top-7  max-md:w-[70vw]
                 ${search ? " block " : "hidden"} 
-                text-black text-2xl rounded-2xl outline-none
+                text-black   md:text-2xl rounded-2xl outline-none
                  focus:ring-blue-500 border-2 border-blue-500
                 focus:border-blue-500 `}
     style={{ boxShadow: "0px 0px  10px black" }}
